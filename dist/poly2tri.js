@@ -1,6 +1,4 @@
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.poly2tri = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-module.exports={"version": "1.5.0"}
-},{}],2:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -181,7 +179,7 @@ module.exports = AdvancingFront;
 module.exports.Node = Node;
 
 
-},{}],3:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -216,7 +214,7 @@ module.exports = assert;
 
 
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -493,7 +491,7 @@ Point.dot = function(a, b) {
 
 module.exports = Point;
 
-},{"./xy":11}],5:[function(require,module,exports){
+},{"./xy":10}],4:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -547,7 +545,7 @@ PointError.prototype.constructor = PointError;
 
 module.exports = PointError;
 
-},{"./xy":11}],6:[function(require,module,exports){
+},{"./xy":10}],5:[function(require,module,exports){
 (function (global){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
@@ -621,7 +619,7 @@ exports.noConflict = function() {
  * @public
  * @const {string}
  */
-exports.VERSION = require('../dist/version.json').version;
+//exports.VERSION = require('../dist/version.json').version;
 
 /**
  * Exports the {@linkcode PointError} class.
@@ -667,7 +665,7 @@ exports.triangulate = sweep.triangulate;
 exports.sweep = {Triangulate: sweep.triangulate};
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../dist/version.json":1,"./point":4,"./pointerror":5,"./sweep":7,"./sweepcontext":8,"./triangle":9}],7:[function(require,module,exports){
+},{"./point":3,"./pointerror":4,"./sweep":6,"./sweepcontext":7,"./triangle":8}],6:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -1503,7 +1501,7 @@ function flipScanEdgeEvent(tcx, ep, eq, flip_triangle, t, p) {
 
 exports.triangulate = triangulate;
 
-},{"./advancingfront":2,"./assert":3,"./pointerror":5,"./triangle":9,"./utils":10}],8:[function(require,module,exports){
+},{"./advancingfront":1,"./assert":2,"./pointerror":4,"./triangle":8,"./utils":9}],7:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -2046,7 +2044,7 @@ SweepContext.prototype.meshClean = function(triangle) {
 
 module.exports = SweepContext;
 
-},{"./advancingfront":2,"./point":4,"./pointerror":5,"./sweep":7,"./triangle":9}],9:[function(require,module,exports){
+},{"./advancingfront":1,"./point":3,"./pointerror":4,"./sweep":6,"./triangle":8}],8:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -2609,7 +2607,7 @@ Triangle.prototype.markConstrainedEdgeByPoints = function(p, q) {
 
 module.exports = Triangle;
 
-},{"./xy":11}],10:[function(require,module,exports){
+},{"./xy":10}],9:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -2720,7 +2718,7 @@ function isAngleObtuse(pa, pb, pc) {
 exports.isAngleObtuse = isAngleObtuse;
 
 
-},{}],11:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 /*
  * Poly2Tri Copyright (c) 2009-2014, Poly2Tri Contributors
  * http://code.google.com/p/poly2tri/
@@ -2829,5 +2827,5 @@ module.exports = {
     equals: equals
 };
 
-},{}]},{},[6])(6)
+},{}]},{},[5])(5)
 });

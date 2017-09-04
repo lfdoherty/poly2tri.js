@@ -1,5 +1,5 @@
 {
-    "name": "poly2tri",
+    "name": "@lfdoherty/poly2tri",
     "version": "1.5.0",
     "description": "A 2D constrained Delaunay triangulation library",
     "main": "src/poly2tri.js",

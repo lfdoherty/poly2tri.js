@@ -70,7 +70,7 @@ exports.noConflict = function() {
  * @public
  * @const {string}
  */
-exports.VERSION = require('../dist/version.json').version;
+//exports.VERSION = require('../dist/version.json').version;
 
 /**
  * Exports the {@linkcode PointError} class.
